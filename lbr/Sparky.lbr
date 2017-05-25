@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6538,6 +6538,10 @@ shrink quad flat pack, square</description>
 <smd name="24" x="2.64" y="3.575" dx="1.12" dy="0.42" layer="1"/>
 <text x="-3.175" y="4.445" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-3.175" y="-5.08" size="0.6096" layer="25">&gt;VALUE</text>
+<wire x1="-1.95" y1="4.325" x2="-1.95" y2="-4.325" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-4.325" x2="1.95" y2="-4.325" width="0.127" layer="21"/>
+<wire x1="1.95" y1="-4.325" x2="1.95" y2="4.325" width="0.127" layer="21"/>
+<wire x1="1.95" y1="4.325" x2="-1.95" y2="4.325" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
