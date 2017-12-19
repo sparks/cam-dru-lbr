@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6877,6 +6877,19 @@ shrink quad flat pack, square</description>
 <text x="-5.5" y="29" size="1.27" layer="25">&gt;NAME</text>
 <text x="-6" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SOT143">
+<wire x1="-0.6" y1="1.4" x2="0.6" y2="1.4" width="0.1" layer="21"/>
+<wire x1="0.6" y1="1.4" x2="0.6" y2="-1.4" width="0.1" layer="21"/>
+<wire x1="0.6" y1="-1.4" x2="-0.6" y2="-1.4" width="0.1" layer="21"/>
+<wire x1="-0.6" y1="-1.4" x2="-0.6" y2="1.4" width="0.1" layer="21"/>
+<text x="-0.635671875" y="1.65275" size="0.813659375" layer="25" ratio="12">&gt;NAME</text>
+<text x="-0.635521875" y="-2.542090625" size="0.81346875" layer="27" ratio="12">&gt;VALUE</text>
+<smd name="1" x="-1.1" y="0.75" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="-1.1" y="-0.95" dx="1.4" dy="0.8" layer="1"/>
+<smd name="3" x="1.1" y="-0.95" dx="1.4" dy="0.8" layer="1" rot="R180"/>
+<smd name="4" x="1.1" y="0.95" dx="1.4" dy="0.8" layer="1" rot="R180"/>
+<circle x="-0.2" y="1" radius="0.2" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -7675,6 +7688,44 @@ and DVD recorder.</description>
 <wire x1="17.78" y1="33.02" x2="-15.24" y2="33.02" width="0.254" layer="94"/>
 <text x="-12.7" y="35.56" size="2.54" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-35.56" size="2.54" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SP503">
+<wire x1="0" y1="-2.54" x2="0" y2="-0.381" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.381" x2="-0.635" y2="-0.381" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="-0.381" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="-0.381" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-0.381" x2="0" y2="-0.381" width="0.1524" layer="94"/>
+<text x="4.576190625" y="-2.560109375" size="1.016040625" layer="95" rot="R90">&gt;NAME</text>
+<text x="6.60813125" y="-2.56315" size="1.01725" layer="96" rot="R90">&gt;VALUE</text>
+<wire x1="-0.508" y1="0.635" x2="0.508" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="0.635" x2="-0.635" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.508" x2="0.508" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.651" x2="-3.175" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="-1.651" x2="-2.54" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.651" x2="-2.54" y2="-1.651" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-0.635" x2="-2.032" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-3.048" y1="-0.635" x2="-3.175" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-0.762" x2="-2.032" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0.889" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="1.905" y2="0.889" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.889" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="3.175" y2="0.889" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="0.889" x2="2.54" y2="0.889" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="1.905" x2="3.048" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="1.905" x2="1.905" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="1.778" x2="3.048" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="A" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="B" x="0" y="2.54" visible="off" length="point"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="point"/>
+<pin name="GND" x="-5.08" y="-2.54" visible="off" length="point"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8669,6 +8720,31 @@ into Bluetooth radio and stack development.</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP0503BAHTG" prefix="U">
+<gates>
+<gate name="G$1" symbol="SP503" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT143">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value=" SP050xBA Series 8 V 30 pF Uni-Directional SMT TVS Avalanche Diode Array SOT-143 "/>
+<attribute name="MF" value="Littelfuse"/>
+<attribute name="MP" value="SP0503BAHTG"/>
+<attribute name="PACKAGE" value="SOT-143 Littelfuse"/>
+<attribute name="PRICE" value="0.47 USD"/>
+</technology>
 </technologies>
 </device>
 </devices>
