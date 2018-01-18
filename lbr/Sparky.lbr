@@ -6925,6 +6925,20 @@ shrink quad flat pack, square</description>
 <wire x1="2.65" y1="-5.1" x2="-2.65" y2="-5.1" width="0.127" layer="21"/>
 <wire x1="-2.65" y1="-5.1" x2="-2.65" y2="5.1" width="0.127" layer="21"/>
 </package>
+<package name="6PAD_ISP">
+<wire x1="-3.556" y1="1.778" x2="3.556" y2="1.778" width="0.127" layer="21"/>
+<wire x1="-3.556" y1="1.778" x2="3.556" y2="1.778" width="0.127" layer="22"/>
+<smd name="MISO" x="-2.54" y="0" dx="1.524" dy="3.302" layer="1"/>
+<smd name="SCK" x="0" y="0" dx="1.524" dy="3.302" layer="1"/>
+<smd name="RST" x="2.54" y="0" dx="1.524" dy="3.302" layer="1"/>
+<smd name="GND" x="2.54" y="0" dx="1.524" dy="3.302" layer="16"/>
+<smd name="MOSI" x="0" y="0" dx="1.524" dy="3.302" layer="16"/>
+<smd name="VCC" x="-2.54" y="0" dx="1.524" dy="3.302" layer="16"/>
+<rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="30"/>
+<rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="29"/>
+<rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="42"/>
+<rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="41"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -7795,6 +7809,27 @@ and DVD recorder.</description>
 <pin name="OFMT1" x="17.78" y="10.16" length="middle" direction="in" rot="R180"/>
 <pin name="OWL1" x="17.78" y="17.78" length="middle" direction="out" rot="R180"/>
 <pin name="~RDY" x="17.78" y="-5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="6PAD_ISP">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<pin name="P$1" x="-10.16" y="5.08" visible="pad" length="middle"/>
+<pin name="P$2" x="-10.16" y="0" visible="pad" length="middle"/>
+<pin name="P$3" x="-10.16" y="-5.08" visible="pad" length="middle"/>
+<pin name="P$4" x="10.16" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="P$5" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="P$6" x="10.16" y="5.08" visible="pad" length="middle" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-5.08" y="5.08"/>
+<vertex x="-2.54" y="7.62"/>
+<vertex x="-5.08" y="7.62"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -8862,6 +8897,31 @@ into Bluetooth radio and stack development.</description>
 <attribute name="PACKAGE" value="SSOP-28 Texas Instruments"/>
 <attribute name="PRICE" value="4.86 USD"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVR-ISP-6-EDGE">
+<description>&lt;b&gt;6 pin edge connector for ISP with ATMEL MCUs.&lt;/b&gt;&lt;br&gt;
+Developed by Craig Moates (craig at moates dot net).&lt;br&gt;
+Library by David Blundell (blundar at gmail dot com).&lt;br&gt;
+&lt;br&gt;
+Often, even a 6 pin header is really inconvenient for board layout and/or production.  This SMD-only header is our de-facto standard for using an edge connector for programming with the help of a 6pin/10pin to edge card adapter.</description>
+<gates>
+<gate name="G$1" symbol="6PAD_ISP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="6PAD_ISP">
+<connects>
+<connect gate="G$1" pin="P$1" pad="MISO"/>
+<connect gate="G$1" pin="P$2" pad="SCK"/>
+<connect gate="G$1" pin="P$3" pad="RST"/>
+<connect gate="G$1" pin="P$4" pad="GND"/>
+<connect gate="G$1" pin="P$5" pad="MOSI"/>
+<connect gate="G$1" pin="P$6" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
