@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6510,7 +6510,7 @@ shrink quad flat pack, square</description>
 <wire x1="8.311" y1="-9.127" x2="15.327" y2="-9.127" width="0.2032" layer="21"/>
 <wire x1="15.327" y1="9.127" x2="15.327" y2="-9.127" width="0.2032" layer="21"/>
 </package>
-<package name="24-SSOP">
+<package name="SSOP-24">
 <description>24-SSOP package</description>
 <smd name="1" x="-2.64" y="3.575" dx="1.12" dy="0.42" layer="1"/>
 <smd name="2" x="-2.64" y="2.925" dx="1.12" dy="0.42" layer="1"/>
@@ -6889,7 +6889,7 @@ shrink quad flat pack, square</description>
 <smd name="4" x="1.1" y="0.95" dx="1.4" dy="0.8" layer="1" rot="R180"/>
 <circle x="-0.2" y="1" radius="0.2" width="0.127" layer="21"/>
 </package>
-<package name="28-SSOP">
+<package name="SSOP-28">
 <text x="-3" y="6" size="0.8128" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3" y="-7" size="0.8128" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 <smd name="1" x="-3.6" y="4.225" dx="1.6" dy="0.4" layer="1"/>
@@ -6938,6 +6938,16 @@ shrink quad flat pack, square</description>
 <rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="29"/>
 <rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="42"/>
 <rectangle x1="-4" y1="-2.032" x2="4" y2="2.032" layer="41"/>
+</package>
+<package name="TO-263-3">
+<text x="-5" y="5" size="2.09016875" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5" y="-15" size="2.08701875" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="1" x="-2.54" y="-10.675" dx="1.07" dy="2.16" layer="1"/>
+<smd name="2" x="0" y="-10.675" dx="1.07" dy="2.16" layer="1"/>
+<smd name="3" x="2.54" y="-10.675" dx="1.07" dy="2.16" layer="1"/>
+<smd name="4" x="0" y="0" dx="6.99" dy="8.33" layer="1"/>
+<circle x="-3.937" y="-9.9595" radius="0.1" width="0.2" layer="21"/>
+<smd name="8" x="-2.54" y="-10.675" dx="1.07" dy="2.16" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -7791,23 +7801,23 @@ and DVD recorder.</description>
 <pin name="IFMT1" x="-17.78" y="7.62" length="middle" direction="in"/>
 <pin name="IFMT2" x="-17.78" y="5.08" length="middle" direction="in"/>
 <pin name="LGRP" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="TDMI" x="-17.78" y="-20.32" length="middle" direction="in"/>
+<pin name="TDMI" x="-17.78" y="-20.32" length="middle"/>
 <pin name="RCKI" x="-17.78" y="-10.16" length="middle" direction="in"/>
 <pin name="BYPAS" x="-17.78" y="-5.08" length="middle" direction="in"/>
 <pin name="VIO" x="17.78" y="-17.78" length="middle" direction="pwr" rot="R180"/>
-<pin name="LRCKI" x="-17.78" y="-15.24" length="middle" direction="in"/>
+<pin name="LRCKI" x="-17.78" y="-15.24" length="middle"/>
 <pin name="MUTE" x="-17.78" y="-2.54" length="middle" direction="in"/>
-<pin name="SDIN" x="-17.78" y="-17.78" length="middle" direction="in"/>
+<pin name="SDIN" x="-17.78" y="-17.78" length="middle"/>
 <pin name="~RST" x="17.78" y="-10.16" length="middle" direction="in" rot="R180"/>
-<pin name="BCKI" x="-17.78" y="-12.7" length="middle" direction="in"/>
+<pin name="BCKI" x="-17.78" y="-12.7" length="middle"/>
 <pin name="GND" x="17.78" y="-20.32" length="middle" direction="pas" rot="R180"/>
-<pin name="LRCKO" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
-<pin name="BCKO" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
-<pin name="SDOUT" x="17.78" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="LRCKO" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="BCKO" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="SDOUT" x="17.78" y="0" length="middle" rot="R180"/>
 <pin name="OWL0" x="17.78" y="20.32" length="middle" direction="in" rot="R180"/>
 <pin name="OFMT0" x="17.78" y="12.7" length="middle" direction="in" rot="R180"/>
 <pin name="OFMT1" x="17.78" y="10.16" length="middle" direction="in" rot="R180"/>
-<pin name="OWL1" x="17.78" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="OWL1" x="17.78" y="17.78" length="middle" direction="in" rot="R180"/>
 <pin name="~RDY" x="17.78" y="-5.08" length="middle" direction="out" rot="R180"/>
 </symbol>
 <symbol name="6PAD_ISP">
@@ -7830,6 +7840,17 @@ and DVD recorder.</description>
 <vertex x="-2.54" y="7.62"/>
 <vertex x="-5.08" y="7.62"/>
 </polygon>
+</symbol>
+<symbol name="LM1084">
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.1524" layer="94"/>
+<text x="2.54" y="7.62" size="2.08615" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="2.54" y="-15.24" size="2.085340625" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="VIN" x="-15.24" y="0" length="middle" direction="pwr"/>
+<pin name="GND" x="0" y="-15.24" length="middle" direction="pwr" rot="R90"/>
+<pin name="VOUT" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8578,7 +8599,7 @@ and are daisy chain compatible.</description>
 <gate name="G$1" symbol="NCV7718" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="24-SSOP">
+<device name="" package="SSOP-24">
 <connects>
 <connect gate="G$1" pin="CSB" pad="19"/>
 <connect gate="G$1" pin="EN" pad="8"/>
@@ -8859,7 +8880,7 @@ into Bluetooth radio and stack development.</description>
 <gate name="A" symbol="SRC4190IDBR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="28-SSOP" package="28-SSOP">
+<device name="28-SSOP" package="SSOP-28">
 <connects>
 <connect gate="A" pin="BCKI" pad="5"/>
 <connect gate="A" pin="BCKO" pad="25"/>
@@ -8922,6 +8943,31 @@ Often, even a 6 pin header is really inconvenient for board layout and/or produc
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM1084" prefix="U">
+<description>Low Dropout Positive Regulators</description>
+<gates>
+<gate name="A" symbol="LM1084" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-263-3">
+<connects>
+<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="VIN" pad="3"/>
+<connect gate="A" pin="VOUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Good"/>
+<attribute name="DESCRIPTION" value="IC REG LIN 5V 5A DDPAK/TO263-3"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MP" value="LM1084IS-5.0/NOPB"/>
+<attribute name="PACKAGE" value="TO-263-3 Texas Instruments"/>
+<attribute name="PRICE" value="2.36 USD"/>
+</technology>
 </technologies>
 </device>
 </devices>
