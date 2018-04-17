@@ -6975,10 +6975,10 @@ Shield pins may be grounded.
 <pad name="D+" x="2.71" y="1" drill="0.92" diameter="1.6" rot="R270"/>
 <pad name="D-" x="2.71" y="-1" drill="0.92" diameter="1.6" rot="R270"/>
 <pad name="VBUS" x="2.71" y="-3.5" drill="0.92" diameter="1.6" rot="R270"/>
-<pad name="SHLD1" x="0" y="-6.57" drill="2.3" rot="R270"/>
-<pad name="SHLD2" x="0" y="6.57" drill="2.3" rot="R270"/>
-<text x="5.08" y="-1.27" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
-<text x="-2.54" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
+<pad name="SHLD1" x="2.71" y="-6.57" drill="2.3" shape="long"/>
+<pad name="SHLD2" x="2.71" y="6.57" drill="2.3" shape="long"/>
+<text x="5" y="-2" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="0" y="-2" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
 </package>
 <package name="SW_JS202011SCQN">
 <wire x1="-4.5" y1="-1.5" x2="4.5" y2="-1.5" width="0.127" layer="51"/>
