@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7020,6 +7020,20 @@ body to pad</text>
 <smd name="5" x="0" y="2.75" dx="1.2" dy="2.5" layer="1"/>
 <smd name="6" x="2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
 </package>
+<package name="TP6_2MM">
+<smd name="P$3" x="-1.5" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$4" x="1.5" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<wire x1="-9" y1="2" x2="-9" y2="-2" width="0.127" layer="21"/>
+<wire x1="-9" y1="-2" x2="9" y2="-2" width="0.127" layer="21"/>
+<wire x1="9" y1="-2" x2="9" y2="2" width="0.127" layer="21"/>
+<wire x1="9" y1="2" x2="-9" y2="2" width="0.127" layer="21"/>
+<text x="-3" y="3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-4" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="P$5" x="4.5" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$6" x="7.5" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$2" x="-4.5" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$1" x="-7.5" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -7997,6 +8011,19 @@ and DVD recorder.</description>
 <pin name="1" x="-5.08" y="-12.7" length="middle" direction="pas" rot="R90"/>
 <pin name="2" x="0" y="-12.7" length="middle" direction="pas" rot="R90"/>
 <pin name="3" x="5.08" y="-12.7" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="TP6">
+<pin name="5" x="-5.08" y="2.54" visible="off" length="short"/>
+<pin name="6" x="-5.08" y="0" visible="off" length="short"/>
+<wire x1="-2.54" y1="13.462" x2="-2.54" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.016" x2="0" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="13.462" width="0.254" layer="94"/>
+<wire x1="0" y1="13.462" x2="-2.54" y2="13.462" width="0.254" layer="94"/>
+<text x="2.54" y="-0.762" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<pin name="4" x="-5.08" y="5.08" visible="off" length="short"/>
+<pin name="3" x="-5.08" y="7.62" visible="off" length="short"/>
+<pin name="2" x="-5.08" y="10.16" visible="off" length="short"/>
+<pin name="1" x="-5.08" y="12.7" visible="off" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9187,6 +9214,26 @@ Often, even a 6 pin header is really inconvenient for board layout and/or produc
 <attribute name="PACKAGE" value="None"/>
 <attribute name="PRICE" value="None"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TP6">
+<gates>
+<gate name="G$1" symbol="TP6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TP6_2MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
