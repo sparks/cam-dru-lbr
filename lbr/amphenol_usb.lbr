@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -41,9 +41,9 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
@@ -104,105 +104,94 @@
 <circle x="-2.8" y="1.5" radius="0.14141875" width="0.127" layer="21"/>
 </package>
 <package name="AMPHENOL_USB_V_VERTICAL_RECEPTACLE_NOFEET">
-<smd name="GND1" x="-2.75" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="TX+1" x="-2.25" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="TX-1" x="-1.75" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="VBUS1" x="-1.25" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="CC1" x="-0.75" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="D+A" x="-0.25" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="D-A" x="0.25" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="SBU1" x="0.75" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="VBUS2" x="1.25" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="RX-2" x="1.75" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="RX+2" x="2.25" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="GND2" x="2.75" y="0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="GND4" x="-2.75" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="RX+1" x="-2.25" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="RX-1" x="-1.75" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="VBUS4" x="-1.25" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="SBU2" x="-0.75" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="D-B" x="-0.25" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="D+B" x="0.25" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="CC2" x="0.75" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="VBUS3" x="1.25" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="TX-2" x="1.75" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="TX+2" x="2.25" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<smd name="GND3" x="2.75" y="-0.8" dx="0.3" dy="0.85" layer="1"/>
-<pad name="P$28" x="-2.4" y="2.15" drill="0.6" diameter="1.143"/>
-<pad name="P$29" x="2.4" y="2.15" drill="0.6" diameter="1.143"/>
-<pad name="P$33" x="-2.4" y="-2.15" drill="0.6" diameter="1.143"/>
-<pad name="P$34" x="2.4" y="-2.15" drill="0.6" diameter="1.143"/>
-<smd name="P$35" x="3.75" y="1" dx="0.889" dy="0.381" layer="1" rot="R135"/>
-<smd name="P$36" x="-3.75" y="1" dx="0.889" dy="0.381" layer="1" rot="R45"/>
-<pad name="P$37" x="-3.75" y="0" drill="0.6" diameter="0.66"/>
-<pad name="P$39" x="3.75" y="0" drill="0.6" diameter="0.58" shape="long"/>
-<smd name="P$38" x="-3.75" y="-1" dx="0.889" dy="0.381" layer="1" rot="R135"/>
-<smd name="P$40" x="3.75" y="-1" dx="0.889" dy="0.381" layer="1" rot="R45"/>
-<circle x="-2.8" y="1.5" radius="0.14141875" width="0.127" layer="21"/>
+<smd name="GND1" x="-2.75" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="TX+1" x="-2.25" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="TX-1" x="-1.75" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="VBUS1" x="-1.25" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="CC1" x="-0.75" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="D+A" x="-0.25" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="D-A" x="0.25" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="SBU1" x="0.75" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="VBUS2" x="1.25" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="RX-2" x="1.75" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="RX+2" x="2.25" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="GND2" x="2.75" y="0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="GND4" x="-2.75" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="RX+1" x="-2.25" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="RX-1" x="-1.75" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="VBUS4" x="-1.25" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="SBU2" x="-0.75" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="D-B" x="-0.25" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="D+B" x="0.25" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="CC2" x="0.75" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="VBUS3" x="1.25" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="TX-2" x="1.75" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="TX+2" x="2.25" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<smd name="GND3" x="2.75" y="-0.83" dx="0.3" dy="0.85" layer="1"/>
+<pad name="FOOT1" x="-2.4" y="2.15" drill="0.7" diameter="1.1"/>
+<pad name="FOOT2" x="2.4" y="2.15" drill="0.7" diameter="1.1"/>
+<pad name="FOOT3" x="-2.4" y="-2.15" drill="0.7" diameter="1.1"/>
+<pad name="FOOT4" x="2.4" y="-2.15" drill="0.7" diameter="1.1"/>
+<smd name="SR2" x="3.75" y="1" dx="0.85" dy="0.45" layer="1" rot="R321"/>
+<smd name="SR1" x="-3.75" y="1" dx="0.85" dy="0.45" layer="1" rot="R39"/>
+<pad name="POST1" x="-3.75" y="0" drill="0.66" diameter="0.85"/>
+<pad name="POST2" x="3.75" y="0" drill="0.6" diameter="0.8" shape="long"/>
+<smd name="SR3" x="-3.75" y="-1" dx="0.85" dy="0.45" layer="1" rot="R321"/>
+<smd name="SR4" x="3.75" y="-1" dx="0.85" dy="0.45" layer="1" rot="R39"/>
+<circle x="-3.6" y="2.2" radius="0.14141875" width="0.127" layer="21"/>
+<wire x1="-4.37" y1="0.98" x2="-3.87" y2="1.48" width="0.127" layer="21" curve="-90"/>
+<wire x1="-3.87" y1="1.48" x2="3.87" y2="1.48" width="0.127" layer="21"/>
+<wire x1="3.87" y1="1.48" x2="4.37" y2="0.98" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.37" y1="0.98" x2="4.37" y2="-0.98" width="0.127" layer="21"/>
+<wire x1="4.37" y1="-0.98" x2="3.87" y2="-1.48" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.87" y1="-1.48" x2="-3.87" y2="-1.48" width="0.127" layer="21"/>
+<wire x1="-3.87" y1="-1.48" x2="-4.37" y2="-0.98" width="0.127" layer="21" curve="-90"/>
+<wire x1="-4.37" y1="-0.98" x2="-4.37" y2="0.98" width="0.127" layer="21"/>
 </package>
 <package name="AMPHENOL_USB_C_HORIZONTAL_RECEPTACLE">
-<smd name="GND1" x="-2.75" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="TX+1" x="-2.25" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="TX-1" x="-1.75" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="VBUS1" x="-1.25" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="CC1" x="-0.75" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="D+A" x="-0.25" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="D-A" x="0.25" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="SBU1" x="0.75" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="VBUS2" x="1.25" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="RX-2" x="1.75" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="RX+2" x="2.25" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="GND2" x="2.75" y="0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="GND4" x="-3" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="RX+1" x="-2.5" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="RX-1" x="-2" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="VBUS4" x="-1.5" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="SBU2" x="-1" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="D-B" x="-0.5" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="D+B" x="0" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="CC2" x="0.5" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="VBUS3" x="1" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="TX-2" x="1.5" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="TX+2" x="2" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<smd name="GND3" x="2.5" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
-<pad name="P$37" x="-3.6" y="0.14" drill="0.6" diameter="0.75"/>
-<circle x="-3.05" y="1.5" radius="0.14141875" width="0.127" layer="21"/>
-<wire x1="3.74" y1="-0.19" x2="3.44" y2="-0.19" width="0" layer="46"/>
-<wire x1="3.44" y1="-0.19" x2="3.115" y2="0.135" width="0" layer="46" curve="-90"/>
-<wire x1="3.115" y1="0.135" x2="3.44" y2="0.46" width="0" layer="46" curve="-90"/>
-<wire x1="3.44" y1="0.46" x2="3.74" y2="0.46" width="0" layer="46"/>
-<wire x1="3.74" y1="0.46" x2="4.065" y2="0.135" width="0" layer="46" curve="-90"/>
-<wire x1="4.065" y1="0.135" x2="3.74" y2="-0.19" width="0" layer="46" curve="-90"/>
-<wire x1="3.44" y1="0.47" x2="3.74" y2="0.47" width="0.075" layer="17"/>
-<wire x1="3.74" y1="0.47" x2="4.075" y2="0.135" width="0.075" layer="17" curve="-90"/>
-<wire x1="4.075" y1="0.135" x2="3.74" y2="-0.2" width="0.075" layer="17" curve="-90"/>
-<wire x1="3.74" y1="-0.2" x2="3.44" y2="-0.2" width="0.075" layer="17"/>
-<wire x1="3.44" y1="-0.2" x2="3.105" y2="0.135" width="0.075" layer="17" curve="-90"/>
-<wire x1="3.105" y1="0.135" x2="3.44" y2="0.47" width="0.075" layer="17" curve="-90"/>
-<wire x1="-4.38" y1="-1.41" x2="-4.38" y2="-0.81" width="0" layer="46"/>
-<wire x1="-4.38" y1="-0.81" x2="-4.13" y2="-0.56" width="0" layer="46" curve="-90"/>
-<wire x1="-4.13" y1="-0.56" x2="-3.88" y2="-0.81" width="0" layer="46" curve="-90"/>
-<wire x1="-3.88" y1="-0.81" x2="-3.88" y2="-1.41" width="0" layer="46"/>
-<wire x1="-3.88" y1="-1.41" x2="-4.13" y2="-1.66" width="0" layer="46" curve="-90"/>
-<wire x1="-4.13" y1="-1.66" x2="-4.38" y2="-1.41" width="0" layer="46" curve="-90"/>
-<wire x1="-4.45" y1="-0.81" x2="-4.45" y2="-1.41" width="0.15" layer="17"/>
-<wire x1="-4.45" y1="-1.41" x2="-4.13" y2="-1.73" width="0.15" layer="17" curve="90"/>
-<wire x1="-4.13" y1="-1.73" x2="-3.81" y2="-1.41" width="0.15" layer="17" curve="90"/>
-<wire x1="-3.81" y1="-1.41" x2="-3.81" y2="-0.81" width="0.15" layer="17"/>
-<wire x1="-3.81" y1="-0.81" x2="-4.13" y2="-0.49" width="0.15" layer="17" curve="90"/>
-<wire x1="-4.13" y1="-0.49" x2="-4.45" y2="-0.81" width="0.15" layer="17" curve="90"/>
-<wire x1="3.88" y1="-1.42" x2="3.88" y2="-0.82" width="0" layer="46"/>
-<wire x1="3.88" y1="-0.82" x2="4.13" y2="-0.57" width="0" layer="46" curve="-90"/>
-<wire x1="4.13" y1="-0.57" x2="4.38" y2="-0.82" width="0" layer="46" curve="-90"/>
-<wire x1="4.38" y1="-0.82" x2="4.38" y2="-1.42" width="0" layer="46"/>
-<wire x1="4.38" y1="-1.42" x2="4.13" y2="-1.67" width="0" layer="46" curve="-90"/>
-<wire x1="4.13" y1="-1.67" x2="3.88" y2="-1.42" width="0" layer="46" curve="-90"/>
-<wire x1="3.81" y1="-0.82" x2="3.81" y2="-1.42" width="0.15" layer="17"/>
-<wire x1="3.81" y1="-1.42" x2="4.13" y2="-1.74" width="0.15" layer="17" curve="90"/>
-<wire x1="4.13" y1="-1.74" x2="4.45" y2="-1.42" width="0.15" layer="17" curve="90"/>
-<wire x1="4.45" y1="-1.42" x2="4.45" y2="-0.82" width="0.15" layer="17"/>
-<wire x1="4.45" y1="-0.82" x2="4.13" y2="-0.5" width="0.15" layer="17" curve="90"/>
-<wire x1="4.13" y1="-0.5" x2="3.81" y2="-0.82" width="0.15" layer="17" curve="90"/>
+<smd name="GND1" x="-2.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="TX+1" x="-2.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="TX-1" x="-1.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="VBUS1" x="-1.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="CC1" x="-0.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="D+A" x="-0.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="D-A" x="0.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="SBU1" x="0.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="VBUS2" x="1.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="RX-2" x="1.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="RX+2" x="2.25" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="GND2" x="2.75" y="0.66" dx="0.3" dy="0.7" layer="1"/>
+<smd name="GND4" x="-3" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="RX+1" x="-2.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="RX-1" x="-2" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="VBUS4" x="-1.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="SBU2" x="-1" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="D-B" x="-0.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="D+B" x="0" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="CC2" x="0.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="VBUS3" x="1" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="TX-2" x="1.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="TX+2" x="2" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<smd name="GND3" x="2.5" y="-1.04" dx="0.3" dy="0.7" layer="1"/>
+<circle x="-3.05" y="1.36" radius="0.14141875" width="0.127" layer="21"/>
+<wire x1="3.755" y1="-0.325" x2="3.455" y2="-0.325" width="0" layer="46"/>
+<wire x1="3.455" y1="-0.325" x2="3.13" y2="0" width="0" layer="46" curve="-90"/>
+<wire x1="3.13" y1="0" x2="3.455" y2="0.325" width="0" layer="46" curve="-90"/>
+<wire x1="3.455" y1="0.325" x2="3.755" y2="0.325" width="0" layer="46"/>
+<wire x1="3.755" y1="0.325" x2="4.08" y2="0" width="0" layer="46" curve="-90"/>
+<wire x1="4.08" y1="0" x2="3.755" y2="-0.325" width="0" layer="46" curve="-90"/>
+<wire x1="-4.38" y1="-1.55" x2="-4.38" y2="-0.95" width="0" layer="46"/>
+<wire x1="-4.38" y1="-0.95" x2="-4.13" y2="-0.7" width="0" layer="46" curve="-90"/>
+<wire x1="-4.13" y1="-0.7" x2="-3.88" y2="-0.95" width="0" layer="46" curve="-90"/>
+<wire x1="-3.88" y1="-0.95" x2="-3.88" y2="-1.55" width="0" layer="46"/>
+<wire x1="-3.88" y1="-1.55" x2="-4.13" y2="-1.8" width="0" layer="46" curve="-90"/>
+<wire x1="-4.13" y1="-1.8" x2="-4.38" y2="-1.55" width="0" layer="46" curve="-90"/>
+<wire x1="3.88" y1="-1.55" x2="3.88" y2="-0.95" width="0" layer="46"/>
+<wire x1="3.88" y1="-0.95" x2="4.13" y2="-0.7" width="0" layer="46" curve="-90"/>
+<wire x1="4.13" y1="-0.7" x2="4.38" y2="-0.95" width="0" layer="46" curve="-90"/>
+<wire x1="4.38" y1="-0.95" x2="4.38" y2="-1.55" width="0" layer="46"/>
+<wire x1="4.38" y1="-1.55" x2="4.13" y2="-1.8" width="0" layer="46" curve="-90"/>
+<wire x1="4.13" y1="-1.8" x2="3.88" y2="-1.55" width="0" layer="46" curve="-90"/>
 <wire x1="4.13" y1="-0.43" x2="4.13" y2="-1.12" width="0" layer="23"/>
 <wire x1="4.13" y1="-1.12" x2="4.13" y2="-1.84" width="0" layer="23"/>
 <wire x1="4.13" y1="-1.12" x2="3.71" y2="-1.12" width="0" layer="23"/>
@@ -211,46 +200,39 @@
 <wire x1="-4.13" y1="-1.13" x2="-4.13" y2="-1.83" width="0" layer="23"/>
 <wire x1="-4.13" y1="-1.13" x2="-4.54" y2="-1.13" width="0" layer="23"/>
 <wire x1="-4.13" y1="-1.13" x2="-3.72" y2="-1.13" width="0" layer="23"/>
-<wire x1="-4.74" y1="-7.34" x2="-4.74" y2="-6.74" width="0" layer="46"/>
-<wire x1="-4.74" y1="-6.74" x2="-4.49" y2="-6.49" width="0" layer="46" curve="-90"/>
-<wire x1="-4.49" y1="-6.49" x2="-4.24" y2="-6.74" width="0" layer="46" curve="-90"/>
-<wire x1="-4.24" y1="-6.74" x2="-4.24" y2="-7.34" width="0" layer="46"/>
-<wire x1="-4.24" y1="-7.34" x2="-4.49" y2="-7.59" width="0" layer="46" curve="-90"/>
-<wire x1="-4.49" y1="-7.59" x2="-4.74" y2="-7.34" width="0" layer="46" curve="-90"/>
-<wire x1="-4.81" y1="-6.74" x2="-4.81" y2="-7.34" width="0.15" layer="17"/>
-<wire x1="-4.81" y1="-7.34" x2="-4.49" y2="-7.66" width="0.15" layer="17" curve="90"/>
-<wire x1="-4.49" y1="-7.66" x2="-4.17" y2="-7.34" width="0.15" layer="17" curve="90"/>
-<wire x1="-4.17" y1="-7.34" x2="-4.17" y2="-6.74" width="0.15" layer="17"/>
-<wire x1="-4.17" y1="-6.74" x2="-4.49" y2="-6.42" width="0.15" layer="17" curve="90"/>
-<wire x1="-4.49" y1="-6.42" x2="-4.81" y2="-6.74" width="0.15" layer="17" curve="90"/>
+<wire x1="-4.74" y1="-7.5" x2="-4.74" y2="-6.9" width="0" layer="46"/>
+<wire x1="-4.74" y1="-6.9" x2="-4.49" y2="-6.65" width="0" layer="46" curve="-90"/>
+<wire x1="-4.49" y1="-6.65" x2="-4.24" y2="-6.9" width="0" layer="46" curve="-90"/>
+<wire x1="-4.24" y1="-6.9" x2="-4.24" y2="-7.5" width="0" layer="46"/>
+<wire x1="-4.24" y1="-7.5" x2="-4.49" y2="-7.75" width="0" layer="46" curve="-90"/>
+<wire x1="-4.49" y1="-7.75" x2="-4.74" y2="-7.5" width="0" layer="46" curve="-90"/>
 <wire x1="-4.49" y1="-6.33" x2="-4.49" y2="-7.06" width="0" layer="23"/>
 <wire x1="-4.49" y1="-7.06" x2="-4.49" y2="-7.76" width="0" layer="23"/>
 <wire x1="-4.49" y1="-7.06" x2="-4.9" y2="-7.06" width="0" layer="23"/>
 <wire x1="-4.49" y1="-7.06" x2="-4.08" y2="-7.06" width="0" layer="23"/>
-<wire x1="4.24" y1="-7.36" x2="4.24" y2="-6.76" width="0" layer="46"/>
-<wire x1="4.24" y1="-6.76" x2="4.49" y2="-6.51" width="0" layer="46" curve="-90"/>
-<wire x1="4.49" y1="-6.51" x2="4.74" y2="-6.76" width="0" layer="46" curve="-90"/>
-<wire x1="4.74" y1="-6.76" x2="4.74" y2="-7.36" width="0" layer="46"/>
-<wire x1="4.74" y1="-7.36" x2="4.49" y2="-7.61" width="0" layer="46" curve="-90"/>
-<wire x1="4.49" y1="-7.61" x2="4.24" y2="-7.36" width="0" layer="46" curve="-90"/>
-<wire x1="4.17" y1="-6.76" x2="4.17" y2="-7.36" width="0.15" layer="17"/>
-<wire x1="4.17" y1="-7.36" x2="4.49" y2="-7.68" width="0.15" layer="17" curve="90"/>
-<wire x1="4.49" y1="-7.68" x2="4.81" y2="-7.36" width="0.15" layer="17" curve="90"/>
-<wire x1="4.81" y1="-7.36" x2="4.81" y2="-6.76" width="0.15" layer="17"/>
-<wire x1="4.81" y1="-6.76" x2="4.49" y2="-6.44" width="0.15" layer="17" curve="90"/>
-<wire x1="4.49" y1="-6.44" x2="4.17" y2="-6.76" width="0.15" layer="17" curve="90"/>
+<wire x1="4.24" y1="-7.5" x2="4.24" y2="-6.9" width="0" layer="46"/>
+<wire x1="4.24" y1="-6.9" x2="4.49" y2="-6.65" width="0" layer="46" curve="-90"/>
+<wire x1="4.49" y1="-6.65" x2="4.74" y2="-6.9" width="0" layer="46" curve="-90"/>
+<wire x1="4.74" y1="-6.9" x2="4.74" y2="-7.5" width="0" layer="46"/>
+<wire x1="4.74" y1="-7.5" x2="4.49" y2="-7.75" width="0" layer="46" curve="-90"/>
+<wire x1="4.49" y1="-7.75" x2="4.24" y2="-7.5" width="0" layer="46" curve="-90"/>
 <wire x1="4.49" y1="-6.37" x2="4.49" y2="-7.06" width="0" layer="23"/>
 <wire x1="4.49" y1="-7.06" x2="4.49" y2="-7.78" width="0" layer="23"/>
 <wire x1="4.49" y1="-7.06" x2="4.07" y2="-7.06" width="0" layer="23"/>
 <wire x1="4.49" y1="-7.06" x2="4.9" y2="-7.06" width="0" layer="23"/>
-<wire x1="4.6" y1="0.85" x2="4.6" y2="-9.15" width="0.075" layer="21"/>
-<wire x1="4.6" y1="-9.15" x2="4.35" y2="-9.4" width="0.075" layer="21" curve="-90"/>
-<wire x1="4.35" y1="-9.4" x2="-4.35" y2="-9.4" width="0.075" layer="21"/>
-<wire x1="-4.35" y1="-9.4" x2="-4.6" y2="-9.15" width="0.075" layer="21" curve="-90"/>
-<wire x1="-4.6" y1="-9.15" x2="-4.6" y2="0.85" width="0.075" layer="21"/>
-<wire x1="-4.6" y1="0.85" x2="-4.35" y2="1.1" width="0.075" layer="21" curve="-90"/>
-<wire x1="-4.35" y1="1.1" x2="4.35" y2="1.1" width="0.075" layer="21"/>
-<wire x1="4.35" y1="1.1" x2="4.6" y2="0.85" width="0.075" layer="21" curve="-90"/>
+<wire x1="4.6" y1="0.71" x2="4.6" y2="-9.29" width="0.075" layer="21"/>
+<wire x1="4.6" y1="-9.29" x2="4.35" y2="-9.54" width="0.075" layer="21" curve="-90"/>
+<wire x1="4.35" y1="-9.54" x2="-4.35" y2="-9.54" width="0.075" layer="21"/>
+<wire x1="-4.35" y1="-9.54" x2="-4.6" y2="-9.29" width="0.075" layer="21" curve="-90"/>
+<wire x1="-4.6" y1="-9.29" x2="-4.6" y2="0.71" width="0.075" layer="21"/>
+<wire x1="-4.6" y1="0.71" x2="-4.35" y2="0.96" width="0.075" layer="21" curve="-90"/>
+<wire x1="-4.35" y1="0.96" x2="4.35" y2="0.96" width="0.075" layer="21"/>
+<wire x1="4.35" y1="0.96" x2="4.6" y2="0.71" width="0.075" layer="21" curve="-90"/>
+<pad name="P$1" x="4.49" y="-7.2" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="P$2" x="4.13" y="-1.25" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="P$3" x="-4.13" y="-1.25" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<pad name="P$4" x="-4.49" y="-7.2" drill="0.5" diameter="0.8" shape="long" rot="R90"/>
+<hole x="-3.6" y="0" drill="0.65"/>
 </package>
 </packages>
 <symbols>
