@@ -7429,6 +7429,9 @@ body to pad</text>
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 <rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
 </package>
+<package name="TOUCHSCREEN-PADS_6MM-ROUND-PAD">
+<smd name="PAD1" x="0" y="0" dx="6" dy="6" layer="1" roundness="100"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -9680,7 +9683,7 @@ Often, even a 6 pin header is really inconvenient for board layout and/or produc
 </device>
 </devices>
 </deviceset>
-<deviceset name="TOUCHSCREEN-PADS_8MM-ROUND-PAD">
+<deviceset name="TOUCHSCREEN-PADS-ROUND-PAD">
 <gates>
 <gate name="G$1" symbol="TOUCHSCREEN-PADS_8MM-ROUND-PAD" x="0" y="0"/>
 </gates>
@@ -9702,6 +9705,14 @@ Often, even a 6 pin header is really inconvenient for board layout and/or produc
 </technologies>
 </device>
 <device name="12MM" package="TOUCHSCREEN-PADS_12MM-ROUND-PAD">
+<connects>
+<connect gate="G$1" pin="PAD1" pad="PAD1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6MM" package="TOUCHSCREEN-PADS_6MM-ROUND-PAD">
 <connects>
 <connect gate="G$1" pin="PAD1" pad="PAD1"/>
 </connects>
