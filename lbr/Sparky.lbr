@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7713,6 +7713,28 @@ Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="21"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="21"/>
 </package>
+<package name="SOP65P490X110-8N">
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="1.725" x2="3.25" y2="1.725" width="0.05" layer="39"/>
+<wire x1="3.25" y1="1.725" x2="3.25" y2="-1.725" width="0.05" layer="39"/>
+<wire x1="3.25" y1="-1.725" x2="-3.25" y2="-1.725" width="0.05" layer="39"/>
+<wire x1="-3.25" y1="-1.725" x2="-3.25" y2="1.725" width="0.05" layer="39"/>
+<circle x="-2.5" y="1.5" radius="0.15" width="0" layer="21"/>
+<text x="-3.30176875" y="1.774409375" size="0.40649375" layer="25">&gt;NAME</text>
+<text x="-3.358440625" y="-2.258309375" size="0.406815625" layer="27">&gt;VALUE</text>
+<circle x="-1" y="1" radius="0.15" width="0" layer="51"/>
+<smd name="1" x="-2.165" y="0.975" dx="1.38" dy="0.45" layer="1"/>
+<smd name="2" x="-2.165" y="0.325" dx="1.38" dy="0.45" layer="1"/>
+<smd name="3" x="-2.165" y="-0.325" dx="1.38" dy="0.45" layer="1"/>
+<smd name="4" x="-2.165" y="-0.975" dx="1.38" dy="0.45" layer="1"/>
+<smd name="5" x="2.165" y="-0.975" dx="1.38" dy="0.45" layer="1" rot="R180"/>
+<smd name="6" x="2.165" y="-0.325" dx="1.38" dy="0.45" layer="1" rot="R180"/>
+<smd name="7" x="2.165" y="0.325" dx="1.38" dy="0.45" layer="1" rot="R180"/>
+<smd name="8" x="2.165" y="0.975" dx="1.38" dy="0.45" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -8896,6 +8918,21 @@ and DVD recorder.</description>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="3" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="4" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="PL611-01-N12MC-R">
+<text x="-15.2426" y="10.1617" size="1.270209375" layer="95">&gt;NAME</text>
+<text x="-15.2438" y="-15.2438" size="1.27031875" layer="96">&gt;VALUE</text>
+<wire x1="-15.24" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-12.7" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<pin name="XIN,FIN" x="-17.78" y="7.62" length="short" direction="in"/>
+<pin name="GND" x="17.78" y="-10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="CLK0" x="17.78" y="-2.54" length="short" direction="out" function="clk" rot="R180"/>
+<pin name="CLK1" x="17.78" y="-5.08" length="short" direction="out" function="clk" rot="R180"/>
+<pin name="CLK2,OE,PDB,FSEL" x="-17.78" y="-2.54" length="short" function="clk"/>
+<pin name="VDD" x="17.78" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="XOUT" x="17.78" y="2.54" length="short" direction="out" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10516,6 +10553,35 @@ HTSSOP-16 package</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PL611-01-N12MC-R" prefix="U">
+<description>Programmable Clock Capable of Providing Three LVCMOS Clock Outputs up to 200MHz</description>
+<gates>
+<gate name="G$1" symbol="PL611-01-N12MC-R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P490X110-8N">
+<connects>
+<connect gate="G$1" pin="CLK0" pad="3"/>
+<connect gate="G$1" pin="CLK1" pad="4"/>
+<connect gate="G$1" pin="CLK2,OE,PDB,FSEL" pad="7"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="XIN,FIN" pad="1"/>
+<connect gate="G$1" pin="XOUT" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Programmable Clock Capable of Providing Three LVCMOS Clock Outputs up to 200MHz "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MP" value="PL611-01-N12MC-R"/>
+<attribute name="PACKAGE" value="MSOP-8 Microchip"/>
+<attribute name="PRICE" value="None"/>
+</technology>
 </technologies>
 </device>
 </devices>
