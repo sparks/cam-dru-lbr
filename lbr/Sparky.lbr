@@ -7855,6 +7855,26 @@ NS Package M08A</description>
 <text x="-3" y="6" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="USB-A-VERT-FEMALE">
+<pad name="SHLD1" x="-6.57" y="-2.71" drill="2.3"/>
+<pad name="SHLD2" x="6.57" y="-2.71" drill="2.3"/>
+<pad name="V+" x="-3.5" y="0" drill="0.9"/>
+<pad name="D-" x="-1" y="0" drill="0.9"/>
+<pad name="D+" x="1" y="0" drill="0.9"/>
+<pad name="GND" x="3.5" y="0" drill="0.9"/>
+<wire x1="-6.25" y1="1.5" x2="6.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="6.25" y1="1.5" x2="6.25" y2="-4.22" width="0.127" layer="21"/>
+<wire x1="6.25" y1="-4.22" x2="-6.25" y2="-4.22" width="0.127" layer="21"/>
+<wire x1="-6.25" y1="-4.22" x2="-6.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-0.3" x2="-5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-5" y1="0.7" x2="5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="5" y1="0.7" x2="5" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="5" y1="-0.3" x2="-5" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-7.25" y1="2.2" x2="-7.25" y2="-4.92" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-7.25" y1="-4.92" x2="7.25" y2="-4.92" width="0.127" layer="21" style="shortdash"/>
+<wire x1="7.25" y1="-4.92" x2="7.25" y2="2.2" width="0.127" layer="21" style="shortdash"/>
+<wire x1="7.25" y1="2.2" x2="-7.25" y2="2.2" width="0.127" layer="21" style="shortdash"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -10265,6 +10285,18 @@ Often, even a 6 pin header is really inconvenient for board layout and/or produc
 <attribute name="PROD_ID" value="CONN-08367" constant="no"/>
 <attribute name="SF_ID" value="PRT-00437" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="TH_VERT_FEM" package="USB-A-VERT-FEMALE">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHLD1 SHLD2"/>
+<connect gate="G$1" pin="VBUS" pad="V+"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
