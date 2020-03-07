@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8274,6 +8274,16 @@ Manufacturer: Hirose&lt;br&gt;
 <text x="-1" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1" y="-11" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="BARRIER-0.325-1X1">
+<description>https://www.molex.com/pdm_docs/sd/387006301_sd.pdf</description>
+<pad name="P$1" x="5.1" y="-2.54" drill="1.93"/>
+<wire x1="0" y1="0" x2="10.2" y2="0" width="0.1" layer="51"/>
+<wire x1="10.2" y1="0" x2="10.2" y2="-12.7" width="0.1" layer="51"/>
+<wire x1="10.2" y1="-12.7" x2="0" y2="-12.7" width="0.1" layer="51"/>
+<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.1" layer="51"/>
+<text x="0" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-15" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -9600,6 +9610,15 @@ and DVD recorder.</description>
 <pin name="NO" x="10.16" y="-5.08" visible="off" length="short" rot="R180"/>
 <pin name="NC" x="10.16" y="5.08" visible="off" length="short" rot="R180"/>
 <pin name="COIL1" x="-7.62" y="5.08" visible="off" length="short"/>
+</symbol>
+<symbol name="GENERIC-CONN-1X1">
+<pin name="P$1" x="-5.08" y="-2.54" visible="pad" length="middle"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11545,6 +11564,21 @@ Molex 0768250002</description>
 <connect gate="G$1" pin="MAIN" pad="MAIN"/>
 <connect gate="G$1" pin="NC" pad="NC"/>
 <connect gate="G$1" pin="NO" pad="NO"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BARRIER-1X1">
+<gates>
+<gate name="G$1" symbol="GENERIC-CONN-1X1" x="-2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="_0.324_MOLEX" package="BARRIER-0.325-1X1">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
