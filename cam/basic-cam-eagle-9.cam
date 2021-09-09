@@ -192,7 +192,9 @@
                     "filename_format": "%PREFIX/silkscreen_top.gbr",
                     "layers": [
                         21,
-                        25
+                        25,
+                        121,
+                        112
                     ],
                     "milling": false,
                     "name": "Silkscreen Top",
@@ -275,7 +277,7 @@
             ]
         }
     ],
-    "timestamp": "2020-07-07T18:15:14",
+    "timestamp": "2021-08-30T17:23:29",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
