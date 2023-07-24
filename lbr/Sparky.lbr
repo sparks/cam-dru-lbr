@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8315,6 +8315,22 @@ Manufacturer: Hirose&lt;br&gt;
 <wire x1="1.2" y1="-1.2" x2="1.2" y2="1.2" width="0.127" layer="121"/>
 <wire x1="1.2" y1="1.2" x2="-1.2" y2="1.2" width="0.127" layer="121"/>
 </package>
+<package name="703W-00/54">
+<wire x1="0" y1="0" x2="0" y2="19" width="0.127" layer="21"/>
+<wire x1="0" y1="19" x2="10" y2="19" width="0.127" layer="21"/>
+<wire x1="10" y1="19" x2="40" y2="19" width="0.127" layer="21"/>
+<wire x1="40" y1="19" x2="50" y2="19" width="0.127" layer="21"/>
+<wire x1="50" y1="19" x2="50" y2="0" width="0.127" layer="21"/>
+<wire x1="50" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="10" y1="19" x2="10" y2="22" width="0.127" layer="21"/>
+<wire x1="10" y1="22" x2="40" y2="22" width="0.127" layer="21"/>
+<wire x1="40" y1="22" x2="40" y2="19" width="0.127" layer="21"/>
+<pad name="MH1" x="5" y="10" drill="3.5"/>
+<pad name="1" x="16" y="2.7" drill="1.8" first="yes"/>
+<pad name="2" x="25" y="2.7" drill="1.8"/>
+<pad name="3" x="34" y="2.7" drill="1.8"/>
+<pad name="MH2" x="45" y="10" drill="3.5"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ETHERNET_RJ-45_INTMAG_POE">
@@ -9681,6 +9697,16 @@ and DVD recorder.</description>
 <pin name="PVDD" x="0" y="10.16" visible="pin" length="middle" rot="R270"/>
 <pin name="OUT+" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="OUT-" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+</symbol>
+<symbol name="703W-00/54">
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="16" size="1.27" layer="95">703W-00/54</text>
+<pin name="1" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="2" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="3" x="20.32" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11682,6 +11708,32 @@ Molex 0768250002</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="703W-00/54">
+<description> &lt;a href="https://pricing.snapeda.com/parts/703W-00/54/Qualtek/view-part?ref=eda"&gt;Check availability&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="703W-00/54" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="703W-00/54">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="In Stock"/>
+<attribute name="DESCRIPTION" value=" Power Entry Connector Receptacle, Male Blades IEC 320-C14 Panel Mount, Flange; Through Hole, Right Angle "/>
+<attribute name="MF" value="Qualtek"/>
+<attribute name="MP" value="703W-00/54"/>
+<attribute name="PACKAGE" value="None"/>
+<attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/703W-00/54/?ref=eda"/>
+</technology>
 </technologies>
 </device>
 </devices>
